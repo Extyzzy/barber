@@ -1,0 +1,71 @@
+{
+  "header": {
+    "home": "Acasa"
+  },
+  "general": {
+    "main_text": "Stil Prin Calitate",
+    "schedule": "Programează-te"
+  },
+  "gallery": {
+    "title": "Galerie"
+  },
+  "team": {
+    "title": "Echipa"
+  },
+  "products": {
+    "title": "Produse",
+    "wahl": {
+      "title": "Wahl shaver",
+      "description": "Mașină de ras, ideal pentru a menține conturul bărbii"
+    },
+    "set_barba": {
+      "title": "Set pentru barbă",
+      "description": "Beard oil - hidradează, face părul mai moale, astfel barbă sea aranjează mai bine.\nBeard crem-fixează și aranjează barba.\nBeard Shampoo- șampon creat special pentru barbă, hidratează și înmoaie firul de păr."
+    },
+    "mart_paste": {
+      "title": "Mart paste",
+      "description": "Pastă pentru aranjarea părului cu o fixare medie și efect natural."
+    },
+    "spray": {
+      "title": "Spray cu sare de mare",
+      "description": "Se aplică după spălare pe păr umed, iar după uscare părul devine mai ascultător ușor de aranjat."
+    },
+    "matte_pomade": {
+      "title": "Matte Pomade",
+      "description": "Pastă pentru aranjarea părului, cu fixare puternică și efect natural."
+    },
+    "clay": {
+      "title": "Clay",
+      "description": "Clay pentru aranjarea părului cu fixare foarte puternică și efect total natural."
+    },
+    "tonic": {
+      "title": "Tonic",
+      "description": "Tonic pentru păr. Are ca scop de a hidrata părul și scalpul și oferă o aranjare ușoară, absolut naturală."
+    },
+    "beard_elexir": {
+      "title": "Beard elexir",
+      "description": "Beard elexir - este un ulei concentrat ce hidrateaza profund barba și pielea iritată. Este un produs deosebit și are proprietăți extraordinare pentru barba ta!"
+    },
+    "texture_clay": {
+      "title": "Texture clay",
+      "description": "Clay pentru aranjarea părului cu fixare puternică și efect natural"
+    }
+  },
+  "service": {
+    "title": "Servicii",
+    "options": {
+      "hairstyle": "Frizura",
+      "beard": "Barbă",
+      "tonnage": "Tonare",
+      "facial_epilation": "Epilare facială"
+    }
+  },
+  "about": {
+    "about_us": "Despre noi",
+    "telephone": "Telefon",
+    "description": "Un BarberShop creat cu multă pasiune. Avem ca scop să aducem mai multă valoare în viața clienților. Aici e locul unde Calitate și Atitudinea este pe primul loc!"
+  },
+  "footer": {
+    "about-us": "Despre noi"
+  }
+}
