@@ -3,3 +3,5 @@ dist/
 .idea/
 .eslintcache
 .DS_Store
+.next
+.package-lock.json
