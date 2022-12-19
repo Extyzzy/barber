@@ -4,8 +4,6 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 
 
 export default function Index() {
-
-  console.info(process.env.hostname)
   const photos = [
     {
       src: `https://i.imgur.com/eip6vU3.jpg`,
