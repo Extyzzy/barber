@@ -204,12 +204,15 @@ a {
   opacity: 0.5;
 }
 
+.gradient-color {
+  background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0 0 0));
+}
 
 .cc-calto-action-ripple {
   z-index: 99999;
   position: fixed;
   right: 3rem;
-  bottom: 5rem;
+  bottom: 3rem;
   background: #ec8b00;
   width: 4rem;
   height: 4rem;

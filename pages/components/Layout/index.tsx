@@ -40,7 +40,7 @@ export default function Layout({ children, logo }: any) {
           <div className={`${activeButton ? 'filter blur bg-button-black' : ''} transition h-[85%]`}>
             {children}
           </div>
-          <div className={`${activeButton ? 'absolute' : 'hidden'} top-2/4 left-2/4 -translate-y-1/2	-translate-x-1/2`}>
+          <div className={`${activeButton ? 'absolute' : 'hidden'} w-full h-full flex items-center justify-center bg-zinc-800/75 top-2/4 left-2/4 -translate-y-1/2	-translate-x-1/2`}>
             <ul className="text-xl">
               {optionsLinks.map(el => <ButtonLinkHamburgher key={el.name} url={el.url} name={el.name} setActiveButton={setActiveButton} />)}
             </ul>

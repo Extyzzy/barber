@@ -145,7 +145,7 @@ export default function Index() {
                 <p className='font-normal'>{product.price} lei</p>
               </div>
 
-              <p className='block sm:text-sm text-xs'>{product.description}</p>
+              <p className='block sm:text-sm text-xs font-light'>{product.description}</p>
             </div>
         ))
       }
