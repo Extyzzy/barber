@@ -222,8 +222,8 @@ a {
 .cc-calto-action-ripple {
   z-index: 99999;
   position: fixed;
-  right: 3rem;
-  bottom: 3rem;
+  right: 1.7rem;
+  bottom: 1.7rem;
   background: #ec8b00;
   width: 4rem;
   height: 4rem;

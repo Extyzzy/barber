@@ -11,9 +11,12 @@ export default function Header({ logo, activeButton, setActiveButton }: any) {
             <div className="cursor-pointer flex h-12 w-12 items-center relative z-10" onClick={() => setActiveButton(!activeButton)}>
                 <MenuButton activeButton={activeButton} />
             </div>
-            <Link href='/' className="logo mt-16">
-                <Image src={logo} alt="Main logo cursor-pointer mt-8" width={200} height={150}/>
-            </Link>
+            <div className="logo mt-4 cursor-pointer">
+                <Link href='/'>
+                    <Image src={logo} alt="Main logo" width={180} height={150}/>
+                </Link>
+            </div>
+
             <ChangeLanguageComponent />
         </div>
     </div>
