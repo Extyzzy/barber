@@ -6,6 +6,7 @@ import NicuCraciun from '../public/img/team/IMG_6731.jpg'
 import EduardCatrinescu from '../public/img/team/IMG_6730.jpg'
 import IonChirilescu from '../public/img/team/IMG_6732.jpg'
 import CosolapSerghei from '../public/img/team/IMG_6738.jpg'
+import SergiuRosca from '../public/img/team/Sergiu_Rosca.jpeg'
 import { NextButton, PrevButton } from './components/Arrows';
 import TeamCarousel from './components/TeamCarousel';
 
@@ -40,7 +41,8 @@ export default function index() {
     { name: 'Nicu Craciun', image: NicuCraciun, title: '', alt: 'Nicu' },
     { name: 'Eduard Catrinescu', image: EduardCatrinescu, title: '', alt: 'Eduard' },
     { name: 'Leonid Poschii', image: LeonidPoschii, title: '', alt: 'Leonid' },
-    { name: 'Coșolap Serghei', image: CosolapSerghei, title: '', alt: 'Serghei' },
+    { name: 'Serghei Coșolap', image: CosolapSerghei, title: '', alt: 'Serghei' },
+    { name: 'Sergiu Roșca', image: SergiuRosca, title: '', alt: 'Sergiu' },
   ]
 
   return (

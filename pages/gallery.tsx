@@ -109,7 +109,7 @@ export default function Index() {
 
   return (
     <div className="relative mx-auto container h-full">
-      <Gallery photos={photos} onClick={openLightbox} />
+      <Gallery photos={photos} onClick={openLightbox} columns={200} direction='row' />
       <ModalGateway>
         {viewerIsOpen ? (
             <Modal onClose={closeLightbox}>
