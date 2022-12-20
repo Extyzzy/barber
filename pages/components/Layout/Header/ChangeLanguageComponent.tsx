@@ -12,7 +12,7 @@ export default function ChangeLanguageComponent() {
   }
 
   return (
-    <div className="cursor-pointer text-xs sm:text-lg z-10" onClick={() => changeLanguageFn()}>
+    <div className="cursor-pointer text-xs sm:text-lg z-10 text-white" onClick={() => changeLanguageFn()}>
       RO / RU
     </div>
   )

@@ -30,12 +30,12 @@ export default function Layout({ children, logo }: any) {
   return (
     <>
       <MetaTags />
-      <div className="absolute h-full w-full">
+      <div className="absolute h-full w-full -z-10">
         <Image src={isMobile ? BackgroundMainImageMobile : BackgroundMainImage} layout="fill" objectFit="cover" alt="Main Image of the background" />
       </div>
+      <Header logo={logo} activeButton={activeButton} setActiveButton={setActiveButton} />
       <div className="h-full text-white">
         <div className="container mx-auto h-full">
-          <Header logo={logo} activeButton={activeButton} setActiveButton={setActiveButton} />
           <div className={`${activeButton ? 'filter blur bg-button-black' : ''} transition h-[85%]`}>
             {children}
           </div>
