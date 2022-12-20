@@ -14,10 +14,10 @@ export default function Index() {
   return (
     <div className="relative container mx-auto sm:text-lg text-sm sm:px-0 px-4 h-full">
       <div className='p-10 rounded-xl bg-zinc-800/75'>
-        <h1 className='sm:text-2xl text-base text-center sm:text-left'>{t('about.about_us')}</h1>
+        <h1 className='sm:text-4xl text-2xl text-center sm:text-left'>{t('about.about_us')}</h1>
         <div className='sm:flex mt-12'>
-          <div className='sm:w-2/3 lg:pr-12 pr-6'>
-            SELECT BARBER - {t('general.main_text')}
+          <div className='sm:w-2/3 lg:pr-12 pr-6 sm:text-xl text-sm font-light'>
+            <strong>SELECT BARBER</strong> - {t('general.main_text')}
             <br />
             {t('about.description')}
           </div>

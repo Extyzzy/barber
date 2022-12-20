@@ -4,8 +4,14 @@
 @import "~slick-carousel/slick/slick.css";
 
 @font-face {
-  font-family: Allura-Regular;
-  src: url("../public/fonts/Allura/Allura-Regular.ttf");
+  font-family: Allura;
+  src: url("../public/fonts/allura/Allura-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Marks;
+  src: url("../public/fonts/Marks/MarckScript-Regular.ttf");
   font-display: swap;
 }
 
@@ -17,7 +23,7 @@
 }
 
 @font-face {
-  font-family: Archivo;
+  font-family: Rubik;
   src: url("../public/fonts/Rubik/Rubik-VariableFont_wght.ttf");
   font-display: swap;
 }
@@ -29,7 +35,7 @@ img {
 html,
 body {
   overflow-x: hidden;
-  font-family: 'Archivo', serif;
+  font-family: 'Rubik', serif;
   font-weight: 800;
   height: 100%;
 }
@@ -174,7 +180,12 @@ a {
 }
 
 .allura {
-  font-family: 'Allura-Regular';
+  font-family: 'Allura';
+}
+
+.marks {
+  font-family: 'Marks', serif;
+  font-weight: 400;
 }
 
 .embla__button__black {
@@ -205,7 +216,7 @@ a {
 }
 
 .gradient-color {
-  background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0 0 0));
+  background: linear-gradient(0deg, rgba(0,255,0,0) 30%, rgba(0,255,0,0.85) 100%);
 }
 
 .cc-calto-action-ripple {

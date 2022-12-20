@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Image from "next/image";
-import BackgroundMainImage from '../../../public/img/desktop.jpg';
-import BackgroundMainImageMobile from '../../../public/img/mobile.jpg';
+import BackgroundMainImage from '../../../public/img/desktop_v2.png';
+import BackgroundMainImageMobile from '../../../public/img/mobile_v1.jpeg';
 import MetaTags from '../../components/MetaTags'
 import ButtonLinkHamburgher from '../../components/MenuHamburgher'
-import { useRouter } from "next/router";
 import {useTranslation} from "react-i18next";
 
 export default function Layout({ children, logo }: any) {
@@ -49,6 +48,5 @@ export default function Layout({ children, logo }: any) {
         </div>
       </div>
     </>
-
   )
 }
