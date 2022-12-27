@@ -17,21 +17,20 @@ export default function Index() {
   ]
 
   return (
-    <div className="relative container mx-auto sm:h-full h-auto mt-4">
-      <div className="card h-full text-center p-10 rounded-xl bg-zinc-800/75">
-        <div className='text-xl text-left sm:text-center flex justify-center pb-8'>
+    <div className="relative sm:w-[700px] mx-auto h-auto mt-6">
+      <div className="card h-full text-center py-8 rounded-xl bg-zinc-800/75 table-service">
+        <div className='text-4xl text-left sm:text-center flex justify-center pb-4 font-bold'>
           {t('service.title').toUpperCase()}
         </div>
         <table className="w-full max-w-screen-lg mx-auto">
           <tbody>
             {options.map(el => (
               <>
-                <tr className="border-t"/>
                 <tr className="sm:h-14 h-10 text-sm font-medium">
-                  <td className="text-left pl-4 sm:pl-0 sm:w-72 w-48 py-4">
+                  <td className="text-left pl-10 sm:pl-0 py-3">
                     <p className='text-lg text-white sm:ml-14'>{el.name.toUpperCase()}</p>
                     <span className='opacity-50 sm:ml-14'>{el?.minutes}</span></td>
-                  <td className='text-lg'>{el.price}</td>
+                  <td className='text-lg pr-10 sm:pr-0'>{el.price}</td>
                 </tr>
               </>
             ))}

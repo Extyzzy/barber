@@ -206,7 +206,6 @@ a {
   padding: 0;
 }
 
-
 .bg-button-black .linkButton {
   background-color: darkgray;
 }
@@ -225,7 +224,6 @@ a {
     margin: 0 !important;
   }
 }
-
 
 .cc-calto-action-ripple {
   z-index: 99999;
