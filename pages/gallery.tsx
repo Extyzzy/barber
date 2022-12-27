@@ -19,7 +19,7 @@ import image_15 from '../public/img/gallery/15.webp'
 import image_16 from '../public/img/gallery/16.webp'
 
 export default function Index() {
-  console.info(image_1)
+
   const photos = [
     {
       src: `${process.env.hostname}${image_1.src}`,
