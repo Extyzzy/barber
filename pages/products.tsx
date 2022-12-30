@@ -1,6 +1,5 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import Slider from "react-slick";
-import {NextButton, PrevButton} from "./components/Arrows";
 import Image from "next/image";
 
 import wahl_1 from '../public/img/products/wahl_1.jpg'
@@ -43,34 +42,8 @@ export default function Index() {
     },
     {
       photos: [
-        set_barba_1,
-        set_barba_2,
-      ],
-      title: t('products.set_barba.title'),
-      description: t('products.set_barba.description'),
-      price: 250
-    },
-    {
-      photos: [
-        mart_1,
-        mart_2
-      ],
-      title:  t('products.mart_paste.title'),
-      description: t('products.mart_paste.description'),
-      price: 320
-    },
-    {
-      photos: [
-        spray
-      ],
-      title: t('products.spray.title'),
-      description: t('products.spray.description'),
-      price: 340
-    },
-    {
-      photos: [
-        matte_pomade_1,
         matte_pomade_2,
+        clay
       ],
       title: t('products.matte_pomade.title'),
       description: t('products.matte_pomade.description'),
@@ -78,11 +51,20 @@ export default function Index() {
     },
     {
       photos: [
-        clay
+        matte_pomade_1,
       ],
-      title: t('products.clay.title'),
-      description: t('products.clay.description'),
+      title: t('products.beard_balm.title'),
+      description: t('products.beard_balm.description'),
       price: 380
+    },
+    {
+      photos: [
+        mart_1,
+        texture_clay
+      ],
+      title:  t('products.mart_paste.title'),
+      description: t('products.mart_paste.description'),
+      price: 320
     },
     {
       photos: [
@@ -102,11 +84,33 @@ export default function Index() {
     },
     {
       photos: [
-        texture_clay
+        mart_2
       ],
-      title: t('products.texture_clay.title'),
+      title:  t('products.texture_clay.title'),
       description: t('products.texture_clay.description'),
       price: 320
+    },
+    {
+      photos: [
+        spray
+      ],
+      title: t('products.spray.title'),
+      description: t('products.spray.description'),
+      price: 340
+    },
+    {
+      photos: [
+        set_barba_2,
+        set_barba_1,
+      ],
+      title: t('products.set_barba.title'),
+      title_beard_oil: t('products.set_barba.title_beard_oil'),
+      title_beard_cream: t('products.set_barba.title_beard_cream'),
+      title_beard_shampon: t('products.set_barba.title_beard_shampon'),
+      description: t('products.set_barba.description'),
+      description_2: t('products.set_barba.description_2'),
+      description_3: t('products.set_barba.description_3'),
+      price: 690
     },
   ];
 
@@ -145,7 +149,19 @@ export default function Index() {
                 <p className='font-normal'>{product.price} lei</p>
               </div>
 
-              <p className='block sm:text-sm text-xs font-light'>{product.description}</p>
+              <p className='block sm:text-sm text-xs font-light'><span className='font-bold'>{product.title_beard_oil}</span> {product.description}</p>
+
+
+              {
+                product?.description_2 && product?.description_3 &&(
+                    <>
+                      <p className='block sm:text-sm text-xs'><span className='font-black'>{product.title_beard_cream}</span><span className='font-light'>{product.description_2}</span></p>
+                      <p className='block sm:text-sm text-xs'><span className='font-black'>{product.title_beard_shampon}</span><span className='font-light'>{product.description_3}</span></p>
+
+                    </>
+                )
+              }
+
             </div>
         ))
       }

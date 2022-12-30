@@ -2,23 +2,18 @@ import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 
 export default function TeamCarousel({ image, alt, name, key }: any) {
-  const [isMobile, setIsMobile] = useState<boolean>(false);
-
-  useEffect(() => {
-    setIsMobile(window.innerWidth < 610);
-  }, [])
-
   return (
-    <div className='relative grayscale hover:grayscale-0 transition duration-500 group' key={key}>
-      <div style={isMobile ? { height: "70vh" } : { height: '76vh' }}>
+    <div className='hover:grayscale-0 transition duration-500 group rounded-2xl' key={key}>
+      <div className='relative h-[76vh]'>
         <Image
           src={image}
           alt={alt}
           layout="fill"
           loading="eager"
+          className='object-contain'
         />
 
-        <div className="hidden group-hover:block absolute top-3/4 left-1/2 text-6xl -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute bottom-[20px] left-1/2 text-6xl -translate-x-1/2 -translate-y-1/2 text-center">
           {name}
         </div>
       </div>

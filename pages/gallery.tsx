@@ -1,92 +1,103 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-
+import image_1 from '../public/img/gallery/1.webp'
+import image_2 from '../public/img/gallery/2.webp'
+import image_3 from '../public/img/gallery/3.webp'
+import image_4 from '../public/img/gallery/4.webp'
+import image_5 from '../public/img/gallery/5.webp'
+import image_6 from '../public/img/gallery/6.webp'
+import image_7 from '../public/img/gallery/7.webp'
+import image_8 from '../public/img/gallery/8.webp'
+import image_9 from '../public/img/gallery/9.webp'
+import image_10 from '../public/img/gallery/10.webp'
+import image_11 from '../public/img/gallery/11.webp'
+import image_12 from '../public/img/gallery/12.webp'
+import image_13 from '../public/img/gallery/13.webp'
+import image_14 from '../public/img/gallery/14.webp'
+import image_15 from '../public/img/gallery/15.webp'
+import image_16 from '../public/img/gallery/16.webp'
 
 export default function Index() {
+
   const photos = [
     {
-      src: `https://i.imgur.com/eip6vU3.jpg`,
+      src: `${process.env.hostname}${image_1.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/BIhaDKT.jpg",
+      src: `${process.env.hostname}${image_2.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/UOtjp8v.jpg",
+      src: `${process.env.hostname}${image_3.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/9q7Vutu.jpg",
+      src: `${process.env.hostname}${image_4.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/SZnprfR.jpg",
+      src: `${process.env.hostname}${image_5.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/U3fI1Tx.jpg",
+      src: `${process.env.hostname}${image_6.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/2YjVoAC.jpg",
+      src: `${process.env.hostname}${image_7.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/OR11EnL.jpg",
+      src: `${process.env.hostname}${image_8.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/aTCByOQ.jpg",
+      src: `${process.env.hostname}${image_9.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/D1HJfK6.jpg",
+      src: `${process.env.hostname}${image_10.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/RGeKLnd.jpg",
+      src: `${process.env.hostname}${image_11.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/Op1Kz7o.jpg",
+      src: `${process.env.hostname}${image_12.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/Ot9n4dP.jpg",
+      src: `${process.env.hostname}${image_13.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/onzn1JB.jpg",
+      src: `${process.env.hostname}${image_14.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/0h1ffxJ.jpg",
+      src: `${process.env.hostname}${image_15.src}`,
       width: 4,
       height: 3
     },
     {
-      src: "https://i.imgur.com/zNHx6Sz.jpg",
-      width: 4,
-      height: 3
-    },
-    {
-      src: "https://i.imgur.com/mXRfoun.jpg",
+      src: `${process.env.hostname}${image_16.src}`,
       width: 4,
       height: 3
     }

@@ -16,22 +16,27 @@
     "title": "Produse",
     "wahl": {
       "title": "Wahl shaver",
-      "description": "Mașină de ras, ideal pentru a menține conturul bărbii"
+      "description": "Mașină de ras, ideal pentru a menține conturul bărbii."
     },
     "set_barba": {
       "title": "Set pentru barbă",
-      "description": "Beard oil - hidradează, face părul mai moale, astfel barbă sea aranjează mai bine.\nBeard crem-fixează și aranjează barba.\nBeard Shampoo- șampon creat special pentru barbă, hidratează și înmoaie firul de păr."
+      "title_beard_oil": "Beard oil ",
+      "title_beard_cream": "Beard crem ",
+      "title_beard_shampon": "Beard Shampoo ",
+      "description": " - hidradează, face părul mai moale, astfel barbă se aranjează mai bine.",
+      "description_2": "-fixează și aranjează barba.",
+      "description_3": "- șampon creat special pentru barbă, hidratează și înmoaie firul de păr."
     },
     "mart_paste": {
-      "title": "Mart paste",
-      "description": "Pastă pentru aranjarea părului cu o fixare medie și efect natural."
+      "title": "Matt paste / Texture clay",
+      "description": "Pastă pentru aranjarea părului cu o fixare medie sau puternică."
     },
     "spray": {
       "title": "Spray cu sare de mare",
       "description": "Se aplică după spălare pe păr umed, iar după uscare părul devine mai ascultător ușor de aranjat."
     },
     "matte_pomade": {
-      "title": "Matte Pomade",
+      "title": "Matte Pomade / Clay",
       "description": "Pastă pentru aranjarea părului, cu fixare puternică și efect natural."
     },
     "clay": {
@@ -40,15 +45,19 @@
     },
     "tonic": {
       "title": "Tonic",
-      "description": "Tonic pentru păr. Are ca scop de a hidrata părul și scalpul și oferă o aranjare ușoară, absolut naturală."
+      "description": "Tonic pentru păr. Are ca scop de a hidrata părul și scalpul, oferă o aranjare ușoară, absolut naturală."
     },
     "beard_elexir": {
       "title": "Beard elexir",
       "description": "Beard elexir - este un ulei concentrat ce hidrateaza profund barba și pielea iritată. Este un produs deosebit și are proprietăți extraordinare pentru barba ta!"
     },
+    "beard_balm": {
+      "title": "Beard balm",
+      "description": "Balsam pentru aranjarea bărbii."
+    },
     "texture_clay": {
-      "title": "Texture clay",
-      "description": "Clay pentru aranjarea părului cu fixare puternică și efect natural"
+      "title": "Beard cream",
+      "description": "Înmoaie firul de păr și aranjează foarte bine orice tip de barbă."
     }
   },
   "service": {
@@ -61,6 +70,7 @@
     }
   },
   "about": {
+    "program": "Program de lucru",
     "about_us": "Despre noi",
     "telephone": "Telefon",
     "description": "Un BarberShop creat cu multă pasiune. Avem ca scop să aducem mai multă valoare în viața clienților. Aici e locul unde Calitate și Atitudinea este pe primul loc!"
