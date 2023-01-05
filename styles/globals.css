@@ -219,9 +219,12 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  .react-photo-gallery--gallery div {
+    justify-content: center;
+  }
   .react-photo-gallery--gallery div img {
-    width: 50%;
-    margin: 0 !important;
+    width: 48%;
+    margin: 2px !important;
   }
 }
 

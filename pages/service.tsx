@@ -18,7 +18,7 @@ export default function Index() {
 
   return (
     <div className="relative sm:w-[700px] mx-auto h-auto mt-6">
-      <div className="card h-full text-center py-8 rounded-xl bg-zinc-800/75 table-service">
+      <div className="card h-full text-center py-8 rounded-xl bg-zinc-800/75 table-service ">
         <div className='text-4xl text-left sm:text-center flex justify-center pb-4 font-bold'>
           {t('service.title').toUpperCase()}
         </div>
