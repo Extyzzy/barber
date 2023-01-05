@@ -23,7 +23,7 @@ export default function Index() {
           </div>
 
           <div className='sm:w-1/3 lg:pr-12 pr-6 sm:text-xl text-sm font-light'>
-            <div className='mb-2'>{t('about.program')}:</div>
+            <div className='my-2 font-bold text-2xl'>{t('about.program')}:</div>
            <div>
              <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2 mb-2'>L</div>  10:00 - 20:00</div>
              <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2 mb-2'>M</div>  10:00 - 20:00</div>
