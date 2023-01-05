@@ -15,13 +15,13 @@ export default function Footer() {
         </a>
           {
               ! hideFooter &&(
-                  <div className="hidden sm:flex justify-center text-center">
-                      <div className="absolute bottom-10">
-                          <div>
+                  <div className="hidden sm:flex justify-center text-center ">
+                      <div className="absolute bottom-0 bg-zinc-800/75 p-5 w-full">
+                          <span className='font-bold text-xl'>
                               +373 79 000 740
-                          </div>
-                          <div className="mt-4">
-                              Chisinau, Bl. Mircea Cel Batrin 33
+                          </span>
+                          <div className="mt-4 font-bold text-xl">
+                              Chisinau, Bd. Mircea cel Bătrân 33
                           </div>
                       </div>
                   </div>
