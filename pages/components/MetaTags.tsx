@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function MetaTags() {
   return (
-    <title>Select Barber</title>
+    <title>SELECT BARBER</title>
   )
 }
