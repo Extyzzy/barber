@@ -15,16 +15,16 @@ export default function ChangeLanguageComponent() {
   }
 
   return (
-    <div className="cursor-pointer text-xs sm:text-lg z-10 text-white flex items-center bg-white rounded-xl px-2" onClick={() => changeLanguageFn()}>
+    <div className="cursor-pointer text-xs sm:text-lg z-10 text-white flex items-center bg-white rounded-xl p-2" onClick={() => changeLanguageFn()}>
 
       {
         (i18n.language === 'ru' &&(
             <>
-              <Image width={30}  height={30} src={Russia} alt="mr-2" /> <div className='ml-2 text-md text-black'>RU</div>
+              <Image width={20} height={20} src={Russia} alt="mr-2" className='rounded-2xl' /> <div className='ml-2 text-md text-black'>RU</div>
             </>
           )) || (
        <>
-         <Image width={30} height={30} src={Romania} alt="mr-2" className='block' /> <div className='ml-2 text-md text-black'>RO</div>
+         <Image width={20} height={20} src={Romania} alt="mr-2" className='block rounded-3xl' /> <div className='ml-2 text-md text-black'>RO</div>
        </>
         )
       }
