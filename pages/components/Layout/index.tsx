@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import Image from "next/image";
 import BackgroundMainImage from '../../../public/img/desktop_v2.png';
 import BackgroundMainImageMobile from '../../../public/img/mobile_v1.jpeg';
-import MetaTags from '../../components/MetaTags'
 import ButtonLinkHamburgher from '../../components/MenuHamburgher'
 import {useTranslation} from "react-i18next";
 
@@ -29,7 +28,6 @@ export default function Layout({ children, logo }: any) {
 
   return (
     <>
-      <MetaTags />
       <div className="absolute top-0 h-full w-full -z-10">
         <Image src={isMobile ? BackgroundMainImageMobile : BackgroundMainImage} layout="fill" objectFit="cover" alt="Main Image of the background" />
       </div>
