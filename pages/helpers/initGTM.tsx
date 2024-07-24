@@ -1,4 +1,4 @@
-export const initGTM = () => {
+const initGTM = () => {
   if (window.gtmDidInit) {
     return false;
   }
@@ -25,3 +25,5 @@ export const initGTM = () => {
 
   return true;
 };
+
+export default initGTM;

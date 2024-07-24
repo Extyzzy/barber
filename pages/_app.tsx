@@ -7,7 +7,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from '../i18n/i18n';
 import Layout from './components/Layout';
 import MainLogo from '../public/img/logo/logo_3.svg';
-import {initGTM} from "./helpers/initGTM";
+import initGTM from "./helpers/initGTM";
 
 function MyApp({ Component, pageProps }: AppProps) {
 

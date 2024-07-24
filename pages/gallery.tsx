@@ -22,87 +22,86 @@ export default function Index() {
 
   const photos = [
     {
-      src: `${process.env.hostname}${image_1.src}`,
+      source: `${process.env.hostname}${image_1.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_2.src}`,
+      source: `${process.env.hostname}${image_2.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_3.src}`,
+      source: `${process.env.hostname}${image_3.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_4.src}`,
+      source: `${process.env.hostname}${image_4.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_5.src}`,
+      source: `${process.env.hostname}${image_5.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_6.src}`,
+      source: `${process.env.hostname}${image_6.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_7.src}`,
+      source: `${process.env.hostname}${image_7.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_8.src}`,
+      source: `${process.env.hostname}${image_8.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_9.src}`,
+      source: `${process.env.hostname}${image_9.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_10.src}`,
+      source: `${process.env.hostname}${image_10.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_11.src}`,
+      source: `${process.env.hostname}${image_11.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_12.src}`,
+      source: `${process.env.hostname}${image_12.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_13.src}`,
+      source: `${process.env.hostname}${image_13.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_14.src}`,
+      source: `${process.env.hostname}${image_14.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_15.src}`,
+      source: `${process.env.hostname}${image_15.src}`,
       width: 4,
       height: 3
     },
     {
-      src: `${process.env.hostname}${image_16.src}`,
+      source: `${process.env.hostname}${image_16.src}`,
       width: 4,
       height: 3
     }
   ];
-
 
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
@@ -120,7 +119,14 @@ export default function Index() {
 
   return (
     <div className="relative mx-auto container h-full">
-      <Gallery photos={photos} onClick={openLightbox} columns={200} direction='row' />
+      <Gallery photos={photos.map(photo => {
+
+        return {
+          src: photo.source,
+          width: photo.width,
+          height: photo.height
+        }
+      })} onClick={openLightbox} columns={200} direction='row' />
       <ModalGateway>
         {viewerIsOpen ? (
             <Modal onClose={closeLightbox}>
