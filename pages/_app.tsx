@@ -12,8 +12,10 @@ import initGTM from "./helpers/initGTM";
 function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
-    if (!window.gtmDidInit) {
-      initGTM();
+    if (typeof window !== "undefined") {
+      if (!window.gtmDidInit) {
+        initGTM();
+      }
     }
   }, []);
 
