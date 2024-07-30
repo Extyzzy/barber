@@ -7,8 +7,11 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from '../i18n/i18n';
 import Layout from './components/Layout';
 import MainLogo from '../public/img/logo/logo_3.svg';
+import { useSearchParams } from 'next/navigation';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -41,6 +44,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       }
     }
   }, []);
+
+
+  useEffect(() => {
+    if (lang) {
+      i18n.changeLanguage(lang)
+    }
+  }, [lang]);
 
   return (
     <I18nextProvider i18n={i18n}>

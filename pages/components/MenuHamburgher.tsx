@@ -8,12 +8,11 @@ interface ButtonLinkHamburgherProps {
 }
 
  const ButtonLinkHamburgher = ({ url, name, setActiveButton }: ButtonLinkHamburgherProps) => {
-     console.info(url)
   return (
     <li onClick={() => setActiveButton(false)} className="py-4">
-        { url && <Link href={url}>{name}</Link> }
+        { url && <Link href={url} legacyBehavior>{name}</Link> }
     </li>
-  )
+  );
 }
 
 export default ButtonLinkHamburgher

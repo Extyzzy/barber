@@ -31,7 +31,7 @@ export default function Index() {
              <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2 mb-2'>J</div>  10:00 - 20:00</div>
              <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2 mb-2'>V</div>  10:00 - 20:00</div>
              <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2 mb-2'>S</div>  10:00 - 20:00</div>
-             <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2'>D</div>  10:00 - 18:00</div>
+             <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2'>D</div>  {t('about.free_day')}</div>
 
            </div>
           </div>
@@ -39,32 +39,38 @@ export default function Index() {
           <div className="sm:w-1/3 lg:pr-12 pr-6 mt-12 sm:mt-0">
             <div className='flex items-center mb-2'>
               <Image width={30} src={Facebook} alt="mr-2" />
-              <Link href="https://www.facebook.com/SelectBarbershop">
-                <a className='ml-4 hover:border-b'>SELECT BARBERSHOP</a>
+              <Link
+                href="https://www.facebook.com/SelectBarbershop"
+                className='ml-4 hover:border-b'>
+                SELECT BARBERSHOP
               </Link>
             </div>
             <div className='flex items-center'>
               <Image width={30} src={Instagram} alt="mr-2" />
-              <Link href="https://www.instagram.com/select.barber/">
-                <a className='ml-4 hover:border-b'>select.barber</a>
+              <Link
+                href="https://www.instagram.com/select.barber/"
+                className='ml-4 hover:border-b'>
+                select.barber
               </Link>
             </div>
             <div className='flex items-center'>
               <Image width={30} src={Tiktok} alt="mr-2" />
-              <Link href="https://www.tiktok.com/@select.barber">
-                <a className='ml-4 hover:border-b'>select.barber</a>
+              <Link
+                href="https://www.tiktok.com/@select.barber"
+                className='ml-4 hover:border-b'>
+                select.barber
               </Link>
             </div>
             <div className='flex items-center mb-2'>
               <Image width={30} src={Phone} alt="mr-2" />
-              <Link href="tel:079000740">
-                <a className='ml-4 hover:border-b'> 0(79) 000 740</a>
+              <Link href="tel:079000740" className='ml-4 hover:border-b'>
+                 0(79) 000 740
               </Link>
             </div>
             <div className='flex items-center'>
               <Image width={30} src={Mail} alt="mr-2" />
-              <Link href="mailto:select.barber@bk.ru">
-                <a className='ml-4 hover:border-b'>select.barber@bk.ru</a>
+              <Link href="mailto:select.barber@bk.ru" className='ml-4 hover:border-b'>
+                select.barber@bk.ru
               </Link>
             </div>
           </div>

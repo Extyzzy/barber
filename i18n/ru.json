@@ -65,6 +65,7 @@
     }
   },
   "about": {
+    "free_day": "Выходной",
     "program": "Рабочие время",
     "about_us": "О нас",
     "telephone": "Телефон",
