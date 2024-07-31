@@ -23,19 +23,18 @@ export default function Index() {
             {t('about.description')}
 
             <div className='mt-4 space-y-2 '>
-             <div ><Image width={25} src={Location} alt="mr-2" /> bd. Mircea cel Bătrân 33</div>
-             <div ><Image width={25} src={Location} alt="mr-2" /> str. Mitropolit Gavriil Bănulescu-Bodoni 57</div>
-             <div ><Image width={25} src={Location} alt="mr-2" /> str. Columna 103</div>
+              <div><Image width={25} src={Location} alt="mr-2"/> bd. Mircea cel Bătrân 33</div>
+              <div><Image width={25} src={Location} alt="mr-2"/> str. Mitropolit Gavriil Bănulescu-Bodoni 57</div>
+              <div><Image width={25} src={Location} alt="mr-2"/> str. Columna 103</div>
             </div>
           </div>
 
 
-
-
           <div className='sm:w-1/3 lg:pr-12 pr-6 sm:text-xl text-sm font-light'>
             <div className='my-2 font-bold text-2xl'>{t('about.program')}:</div>
-           <div>
-             <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2 mb-2'>L</div>  10:00 - 20:00</div>
+            <div>
+              <div className='flex'>
+                <div className='bg-white w-[25px] text-center rounded-md text-black mr-2 mb-2'>L</div>  10:00 - 20:00</div>
              <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2 mb-2'>M</div>  10:00 - 20:00</div>
              <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2 mb-2'>M</div>  10:00 - 20:00</div>
              <div className='flex'><div className='bg-white w-[25px] text-center rounded-md text-black mr-2 mb-2'>J</div>  10:00 - 20:00</div>

@@ -8,6 +8,7 @@ import i18n from '../i18n/i18n';
 import Layout from './components/Layout';
 import MainLogo from '../public/img/logo/logo_3.svg';
 import { useSearchParams } from 'next/navigation';
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const searchParams = useSearchParams();
@@ -54,7 +55,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <I18nextProvider i18n={i18n}>
+
       <Layout logo={MainLogo}>
+        <Head>
+          <title>SELECT BARBER</title>
+        </Head>
         <Component {...pageProps} />
       </Layout>
     </I18nextProvider>
