@@ -3,7 +3,7 @@ import Image from 'next/image';
 import MenuButton from "./MenuButton";
 import ChangeLanguageComponent from "./ChangeLanguageComponent";
 import Link from 'next/link'
-import {useMenuItems} from "../../../hooks/useMenuItems";
+import useMenuItems from "../../../hooks/useMenuItems";
 import ButtonLink from "../../ButtonLink";
 import { usePathname } from 'next/navigation'
 

@@ -6,7 +6,7 @@ interface MenuItem {
     url: string
 }
 
-export const useMenuItems = (): MenuItem[] => {
+const useMenuItems = (): MenuItem[] => {
     const { t } = useTranslation();
 
     return [
@@ -18,3 +18,5 @@ export const useMenuItems = (): MenuItem[] => {
         {name: t('about.about_us'), url: '/about'},
     ]
 }
+
+export default useMenuItems

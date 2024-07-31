@@ -5,7 +5,7 @@ import Image from "next/image";
 import BackgroundMainImage from '../../../public/img/desktop_v2.png';
 import BackgroundMainImageMobile from '../../../public/img/mobile_v1.jpeg';
 import ButtonLinkHamburgher from '../../components/MenuHamburgher'
-import {useMenuItems} from "../../hooks/useMenuItems";
+import useMenuItems from "../../hooks/useMenuItems";
 
 export default function Layout({ children, logo }: any) {
   const [activeButton, setActiveButton] = useState<boolean>(false);
