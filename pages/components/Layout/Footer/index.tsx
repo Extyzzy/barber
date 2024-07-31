@@ -10,19 +10,28 @@ export default function Footer() {
 
   return (
       <>
-        <a className="cc-calto-action-ripple block sm:hidden " href="tel:079000740">
-            <Image src={Phone} alt="cursor-pointer" />
-        </a>
+          <a className="cc-calto-action-ripple block sm:hidden " href="tel:079000740">
+              <Image src={Phone} alt="cursor-pointer"/>
+          </a>
           {
-              ! hideFooter &&(
-                  <div className="hidden sm:flex justify-center text-center ">
+              !hideFooter && (
+                  <div className="hidden sm:flex justify-center text-center">
                       <div className="absolute bottom-0 bg-zinc-800/75 p-5 w-full">
-                          <span className='font-bold text-xl'>
+                          <div className='font-bold text-xl'>
                               +373 79 000 740
-                          </span>
-                          <div className="mt-4 font-bold text-xl">
-                              Chisinau, Bd. Mircea cel Bătrân 33
                           </div>
+                          <div className='lg:flex justify-center gap-16 text-center w-[60%] mx-auto'>
+                              <div className="mt-4 font-bold text-xl w-[16rem] mx-auto">
+                                  str. Columna 103
+                              </div>
+                              <div className="mt-4 font-bold text-xl  w-[28rem] mx-auto">
+                                  str. Mitropolit Gavriil Bănulescu-Bodoni 57
+                              </div>
+                              <div className="mt-4 font-bold text-xl  w-[16rem] mx-auto">
+                                  Bd. Mircea cel Bătrân 33
+                              </div>
+                          </div>
+
                       </div>
                   </div>
               )

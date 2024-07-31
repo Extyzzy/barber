@@ -7,6 +7,7 @@ import Instagram from "../public/img/svg/instagram.svg";
 import Facebook from "../public/img/svg/facebook.svg";
 import Phone from "../public/img/svg/phone-call.svg";
 import Mail from "../public/img/svg/mail.svg";
+import Location from "../public/img/svg/location.svg";
 
 export default function Index() {
   const { t } = useTranslation();
@@ -20,7 +21,16 @@ export default function Index() {
             <strong>SELECT BARBER</strong> - {t('general.main_text')}
             <br />
             {t('about.description')}
+
+            <div className='mt-4 space-y-2 '>
+             <div ><Image width={25} src={Location} alt="mr-2" /> bd. Mircea cel Bătrân 33</div>
+             <div ><Image width={25} src={Location} alt="mr-2" /> str. Mitropolit Gavriil Bănulescu-Bodoni 57</div>
+             <div ><Image width={25} src={Location} alt="mr-2" /> str. Columna 103</div>
+            </div>
           </div>
+
+
+
 
           <div className='sm:w-1/3 lg:pr-12 pr-6 sm:text-xl text-sm font-light'>
             <div className='my-2 font-bold text-2xl'>{t('about.program')}:</div>
@@ -45,7 +55,7 @@ export default function Index() {
                 SELECT BARBERSHOP
               </Link>
             </div>
-            <div className='flex items-center'>
+            <div className='flex items-center mb-2'>
               <Image width={30} src={Instagram} alt="mr-2" />
               <Link
                 href="https://www.instagram.com/select.barber/"
@@ -53,7 +63,7 @@ export default function Index() {
                 select.barber
               </Link>
             </div>
-            <div className='flex items-center'>
+            <div className='flex items-center mb-2'>
               <Image width={30} src={Tiktok} alt="mr-2" />
               <Link
                 href="https://www.tiktok.com/@select.barber"
@@ -79,14 +89,15 @@ export default function Index() {
 
       <div className='h-[400px] mt-4 mapIframe'>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8014.917929822598!2d28.883907621554144!3d47.05459019919812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d6217e0e97b2e5d!2sSELECT%20BARBERSHOP!5e0!3m2!1sru!2s!4v1661340322908!5m2!1sru!2s"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen={true}
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/d/u/0/embed?mid=14x1q8ZjymdhUq2vWUO4Oy3YD0oOL05w&ehbc=2E312F&noprof=1"
+            width="100%"
+            height="100%"
+            style={{border: 0}}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
         />
+
       </div>
     </div>
   );

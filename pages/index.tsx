@@ -11,7 +11,7 @@ export default function App() {
               <div className='sm:mb-0 mb-20 pb-0'>
                   <h1 className={`sm:text-6xl text-3xl tracking-[0.3rem] ${i18n.language === 'ru' ? 'marks' : 'allura'}  `}>{t('general.main_text')}</h1>
                   <div className="text-center mt-4">
-                      <ButtonLink to='https://n1186043.alteg.io' text={t('general.schedule')} />
+                      <ButtonLink />
                   </div>
               </div>
           </div>
