@@ -17,7 +17,7 @@ export default function Index() {
       <div className='p-10 rounded-xl bg-zinc-800/75'>
         <h1 className='sm:text-4xl text-2xl text-center sm:text-left'>{t('about.about_us')}</h1>
         <div className='sm:flex mt-4'>
-          <div className='sm:w-1/3 lg:pr-12 pr-6 sm:text-xl text-sm font-light'>
+          <div className='sm:w-1/3 lg:pr-12 sm:text-xl text-sm font-light'>
             <strong>SELECT BARBER</strong> - {t('general.main_text')}
             <br />
             {t('about.description')}
@@ -30,7 +30,7 @@ export default function Index() {
           </div>
 
 
-          <div className='sm:w-1/3 lg:pr-12 pr-6 sm:text-xl text-sm font-light'>
+          <div className='sm:w-1/3 lg:pr-12 sm:text-xl text-sm font-light'>
             <div className='my-2 font-bold text-2xl'>{t('about.program')}:</div>
             <div>
               <div className='flex'>

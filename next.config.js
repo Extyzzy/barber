@@ -17,6 +17,7 @@ const nextConfig = {
   },
   env: {
     hostname: 'https://selectbarber.md/',
+    buttonLink: 'https://n1186043.alteg.io',
   },
 }
 

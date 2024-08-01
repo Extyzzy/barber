@@ -48,11 +48,6 @@ export default function Header({ logo, activeButton, setActiveButton }: any) {
                   <Link href='/' legacyBehavior>
                       <Image src={logo} alt="Main logo" width={180} height={150}/>
                   </Link>
-                  {
-                      pathname !== '/' &&(
-                          <ButtonLink size='md' />
-                      )
-                  }
               </div>
 
               <ChangeLanguageComponent />

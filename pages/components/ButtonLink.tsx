@@ -8,7 +8,7 @@ type ButtonLinkProps = {
   size?: 'md' | 'lg'
 }
 
-export default function ButtonLink({ text, to = 'https://n1186043.alteg.io', target, size }: ButtonLinkProps) {
+export default function ButtonLink({ text, to = process.env.buttonLink, target, size }: ButtonLinkProps) {
    const {t } = useTranslation()
 
   return (

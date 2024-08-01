@@ -4,7 +4,8 @@
   },
   "general": {
     "main_text": "Стиль и Качество",
-    "schedule": "Записаться"
+    "schedule": "Записаться,",
+    "schedule_online": "Записаться онлайн"
   },
   "gallery": {
     "title": "Галерия"

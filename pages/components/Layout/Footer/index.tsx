@@ -2,17 +2,28 @@ import React from "react";
 import Image from "next/image";
 import Phone from '../../../../public/img/svg/phone-call.svg';
 import {useRouter} from "next/router";
+import {useTranslation} from "react-i18next";
 
 export default function Footer() {
   const route = useRouter();
-
-  const hideFooter = ['/service', '/about', '/gallery', '/products'].find(path => path === route.pathname )
+  const { t } = useTranslation()
+  const hideFooter = ['/team', '/service', '/about', '/gallery', '/products'].find(path => path === route.pathname )
 
   return (
       <>
-          <a className="cc-calto-action-ripple block sm:hidden " href="tel:079000740">
+          <a className={`cc-calto-action-ripple block sm:hidden font-light ${!hideFooter ? '!bottom-12' : ''}`} href="tel:079000740">
               <Image src={Phone} alt="cursor-pointer"/>
           </a>
+
+          {
+              hideFooter && (
+                  <a className="animation-button absolute bottom-8 right-7 bg-blue-600/50 w-24 h-24 flex items-center justify-center p-2 text-sm text-center rounded-full sm:hidden "
+                     href={process.env.buttonLink}>
+                      {t('general.schedule_online')}
+                  </a>
+              )
+          }
+
           {
               !hideFooter && (
                   <div className="hidden sm:flex justify-center text-center">
