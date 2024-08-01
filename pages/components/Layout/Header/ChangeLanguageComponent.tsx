@@ -28,11 +28,11 @@ export default function ChangeLanguageComponent() {
       {
         (i18n.language === 'ru' &&(
             <>
-              <Image width={20} height={20} src={Russia} alt="mr-2" className='rounded-2xl' /> <div className='ml-2 text-md text-black'>RU</div>
+              <Image width={20} height={20} src={Russia} alt="Flag Moldova" className='rounded-2xl' /> <div className='ml-2 text-md text-black'>RU</div>
             </>
           )) || (
        <>
-         <Image width={20} height={20} src={Romania} alt="mr-2" className='block rounded-3xl' /> <div className='ml-2 text-md text-black'>RO</div>
+         <Image width={20} height={20} src={Romania} alt="Flag Romania" className='block rounded-3xl' /> <div className='ml-2 text-md text-black'>RO</div>
        </>
         )
       }

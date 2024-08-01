@@ -15,17 +15,17 @@ export default function Index() {
   return (
     <div className="relative container mx-auto sm:text-lg text-sm sm:px-0 px-4 h-full mt-4">
       <div className='p-10 rounded-xl bg-zinc-800/75'>
-        <h1 className='sm:text-4xl text-2xl text-center sm:text-left'>{t('about.about_us')}</h1>
+        <p className='sm:text-4xl text-2xl text-center sm:text-left'>{t('about.about_us')}</p>
         <div className='sm:flex mt-4'>
           <div className='sm:w-1/3 lg:pr-12 sm:text-xl text-sm font-light'>
-            <strong>SELECT BARBER</strong> - {t('general.main_text')}
+            <h1 className='inline-block font-bold'>SELECT BARBER</h1> - {t('general.main_text')}
             <br />
             {t('about.description')}
 
             <div className='mt-4 space-y-2 '>
-              <div><Image width={25} src={Location} alt="mr-2"/> bd. Mircea cel Bătrân 33</div>
-              <div><Image width={25} src={Location} alt="mr-2"/> str. Mitropolit Gavriil Bănulescu-Bodoni 57</div>
-              <div><Image width={25} src={Location} alt="mr-2"/> str. Columna 103</div>
+              <div><Image width={25} src={Location} alt="bd. Mircea cel Bătrân"/> <h2 className='inline-block'>bd. Mircea cel Bătrân 33</h2></div>
+              <div><Image width={25} src={Location} alt="str. Mitropolit Gavriil Bănulescu-Bodoni"/> <h2 className='inline-block'>str. Mitropolit Gavriil Bănulescu-Bodoni 57</h2> </div>
+              <div><Image width={25} src={Location} alt="str. Columna"/> <h3 className='inline-block'>str. Columna 103</h3></div>
             </div>
           </div>
 
@@ -47,15 +47,15 @@ export default function Index() {
 
           <div className="sm:w-1/3 lg:pr-12 pr-6 mt-12 sm:mt-0">
             <div className='flex items-center mb-2'>
-              <Image width={30} src={Facebook} alt="mr-2" />
+              <Image width={30} src={Facebook} alt="Facebook" />
               <Link
                 href="https://www.facebook.com/SelectBarbershop"
                 className='ml-4 hover:border-b'>
-                SELECT BARBERSHOP
+                <h2>SELECT BARBERSHOP</h2>
               </Link>
             </div>
             <div className='flex items-center mb-2'>
-              <Image width={30} src={Instagram} alt="mr-2" />
+              <Image width={30} src={Instagram} alt="Instagram" />
               <Link
                 href="https://www.instagram.com/select.barber/"
                 className='ml-4 hover:border-b'>
@@ -63,7 +63,7 @@ export default function Index() {
               </Link>
             </div>
             <div className='flex items-center mb-2'>
-              <Image width={30} src={Tiktok} alt="mr-2" />
+              <Image width={30} src={Tiktok} alt="Tiktok" />
               <Link
                 href="https://www.tiktok.com/@select.barber"
                 className='ml-4 hover:border-b'>
@@ -71,13 +71,13 @@ export default function Index() {
               </Link>
             </div>
             <div className='flex items-center mb-2'>
-              <Image width={30} src={Phone} alt="mr-2" />
+              <Image width={30} src={Phone} alt="Telefon" />
               <Link href="tel:079000740" className='ml-4 hover:border-b'>
                  0(79) 000 740
               </Link>
             </div>
             <div className='flex items-center'>
-              <Image width={30} src={Mail} alt="mr-2" />
+              <Image width={30} src={Mail} alt="Mail" />
               <Link href="mailto:select.barber@bk.ru" className='ml-4 hover:border-b'>
                 select.barber@bk.ru
               </Link>

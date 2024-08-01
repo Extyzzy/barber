@@ -20,7 +20,7 @@ export default function Layout({ children, logo }: any) {
   return (
     <>
       <div className="absolute top-0 h-full w-full -z-10">
-        <Image src={isMobile ? BackgroundMainImageMobile : BackgroundMainImage} layout="fill" objectFit="cover" alt="Main Image of the background" />
+        <Image src={isMobile ? BackgroundMainImageMobile : BackgroundMainImage} layout="fill" objectFit="cover" alt="Select barber" />
       </div>
       <Header logo={logo} activeButton={activeButton} setActiveButton={setActiveButton} />
       <div className="h-full text-white pt-24">

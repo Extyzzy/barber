@@ -24,7 +24,7 @@ export default function Header({ logo, activeButton, setActiveButton }: any) {
                        if (index === 4) {
                            return (
                                <Link href='/' className='block w-[200px] mr-24' >
-                                   <Image src={logo} alt="Main logo" width={180} height={150}/>
+                                   <Image src={logo} alt="Select barber" width={180} height={150}/>
                                </Link>
                            )
                        }
@@ -46,7 +46,7 @@ export default function Header({ logo, activeButton, setActiveButton }: any) {
 
               <div className="lg:hidden flex w-[80%] justify-around logo mt-4 cursor-pointer ">
                   <Link href='/' legacyBehavior>
-                      <Image src={logo} alt="Main logo" width={180} height={150}/>
+                      <Image src={logo} alt="Select barber" width={180} height={150}/>
                   </Link>
               </div>
 

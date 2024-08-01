@@ -12,7 +12,7 @@ export default function Footer() {
   return (
       <>
           <a className={`cc-calto-action-ripple block sm:hidden font-light ${!hideFooter ? '!bottom-12' : ''}`} href="tel:079000740">
-              <Image src={Phone} alt="cursor-pointer"/>
+              <Image src={Phone} alt="Numarul de telefon"/>
           </a>
 
           {
@@ -32,15 +32,15 @@ export default function Footer() {
                               +373 79 000 740
                           </div>
                           <div className='lg:flex justify-center gap-16 text-center w-[60%] mx-auto'>
-                              <div className="mt-4 font-bold text-xl w-[16rem] mx-auto">
+                              <h3 className="mt-4 font-bold text-xl w-[16rem] mx-auto">
                                   str. Columna 103
-                              </div>
-                              <div className="mt-4 font-bold text-xl  w-[28rem] mx-auto">
+                              </h3>
+                              <h3 className="mt-4 font-bold text-xl  w-[28rem] mx-auto">
                                   str. Mitropolit Gavriil Bănulescu-Bodoni 57
-                              </div>
-                              <div className="mt-4 font-bold text-xl  w-[16rem] mx-auto">
+                              </h3>
+                              <h3 className="mt-4 font-bold text-xl  w-[16rem] mx-auto">
                                   Bd. Mircea cel Bătrân 33
-                              </div>
+                              </h3>
                           </div>
 
                       </div>

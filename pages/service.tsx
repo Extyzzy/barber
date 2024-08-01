@@ -20,7 +20,8 @@ export default function Index() {
     <div className="relative sm:w-[700px] mx-auto h-auto mt-6">
       <div className="card h-full text-center py-8 rounded-xl bg-zinc-800/75 table-service ">
         <div className='text-4xl text-left sm:text-center flex justify-center pb-4 font-bold'>
-          {t('service.title').toUpperCase()}
+          {t('service.title').toUpperCase()}<h1 className='ml-3'>BARBER</h1>
+
         </div>
         <table className="w-full max-w-screen-lg mx-auto">
           <tbody>
@@ -28,7 +29,7 @@ export default function Index() {
               <>
                 <tr className="sm:h-14 h-10 text-sm font-medium">
                   <td className="text-left pl-10 sm:pl-0 py-3">
-                    <p className='text-lg text-white sm:ml-14'>{el.name.toUpperCase()}</p>
+                    <h3 className='text-lg text-white sm:ml-14'>{el.name.toUpperCase()}</h3>
                     <span className='opacity-50 sm:ml-14'>{el?.minutes}</span></td>
                   <td className='text-lg pr-10 sm:pr-0'>{el.price}</td>
                 </tr>
