@@ -26,20 +26,26 @@ export default function Footer() {
 
           {
               !hideFooter && (
-                  <div className="hidden sm:flex justify-center text-center">
+                  <div className="flex justify-center text-center">
                       <div className="absolute bottom-0 bg-zinc-800/75 p-5 w-full">
-                          <div className='font-bold text-xl'>
+                          <div className='hidden sm:block sm:font-bold text-xl'>
                               +373 79 000 740
                           </div>
-                          <div className='lg:flex justify-center gap-16 text-center w-[60%] mx-auto'>
-                              <h3 className="mt-4 font-bold text-xl w-[16rem] mx-auto">
-                                  str. Columna 103
+                          <div className='flex flex-wrap lg:flex-nowrap justify-center lg:gap-16 text-center sm:w-[60%] mx-auto'>
+                              <h3 className="mt-2 sm:mt-4  order-2 sm:order-1 font-bold text-xl w-[16rem] mx-auto">
+                                <a target="_blank" href="https://www.google.com/maps/place/SELECT+BARBER/@47.0238106,28.8019495,14z/data=!4m10!1m2!2m1!1sSELECT+BARBERSHOP+103!3m6!1s0x40c97da5fc964ea1:0xc438e7f992849ddd!8m2!3d47.0238106!4d28.8400583!15sChVTRUxFQ1QgQkFSQkVSU0hPUCAxMDNaFyIVc2VsZWN0IGJhcmJlcnNob3AgMTAzkgELYmFyYmVyX3Nob3CaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUkllazFmV1Y5QlJSQULgAQD6AQQIIhA1!16s%2Fg%2F11vj3zxhhy!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
+                                str. Columna 103
+                                </a>
                               </h3>
-                              <h3 className="mt-4 font-bold text-xl  w-[28rem] mx-auto">
-                                  str. Mitropolit Gavriil Bănulescu-Bodoni 57
+                              <h3 className="order-1 sm:order-2 font-bold text-xl sm:mt-4 sm:w-[28rem] mx-auto">
+                                <a target="_blank" href="https://www.google.com/maps/place/SELECT+BARBER/@47.0292329,28.8307769,17z/data=!3m1!4b1!4m6!3m5!1s0x40c97d00165f3583:0x1f1ad9cd66c06c15!8m2!3d47.0292293!4d28.8356424!16s%2Fg%2F11vx4f_4vk!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
+                               str. Mitropolit Gavriil Bănulescu-Bodoni 57
+                                </a>
                               </h3>
-                              <h3 className="mt-4 font-bold text-xl  w-[16rem] mx-auto">
-                                  Bd. Mircea cel Bătrân 33
+                              <h3 className="order-3 sm:order-3 mt-2 sm:mt-4 font-bold text-xl  w-[16rem] mx-auto">
+                                <a target="_blank" href="https://www.google.com/maps/place/SELECT+BARBERSHOP/@47.0545049,28.8870013,17z/data=!3m1!4b1!4m6!3m5!1s0x40c97d55a1adb603:0x5d6217e0e97b2e5d!8m2!3d47.0545013!4d28.8895816!16s%2Fg%2F11r7n2ybl9!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
+                                Bd. Mircea cel Bătrân 33
+                                </a>
                               </h3>
                           </div>
 
