@@ -44,8 +44,8 @@ export default function Footer() {
                               
                             <button className="order-1 sm:order-2 bg-white text-black rounded-2xl sm:mt-4 mt-2 p-2">
                                 <h3 className="font-bold text-base sm:text-xl sm:w-[29rem] mx-auto">
-                                    <a target="_blank" href="https://www.google.com/maps/place/SELECT+BARBER/@47.0292329,28.8307769,17z/data=!3m1!4b1!4m6!3m5!1s0x40c97d00165f3583:0x1f1ad9cd66c06c15!8m2!3d47.0292293!4d28.8356424!16s%2Fg%2F11vx4f_4vk!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
-                                <Image width={25} src={Location} alt="str. Mitropolit Gavriil Bănulescu-Bodoni 57"/>  str. Mitropolit Gavriil Bănulescu-Bodoni 57
+                                    <a target="_blank" href="https://www.google.com/maps/place/SELECT+BARBERSHOP/@47.0545049,28.8870013,17z/data=!3m1!4b1!4m6!3m5!1s0x40c97d55a1adb603:0x5d6217e0e97b2e5d!8m2!3d47.0545013!4d28.8895816!16s%2Fg%2F11r7n2ybl9!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
+                                <Image width={25} src={Location} alt="Bd. Mircea cel Bătrân 39"/>  Bd. Mircea cel Bătrân 39
                                     </a>
                                 </h3>
                             </button>

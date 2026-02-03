@@ -24,7 +24,7 @@ export default function Index() {
 
             <div className='mt-4 space-y-2 '>
               <div><Image width={25} src={Location} alt="bd. Mircea cel Bătrân"/> <h2 className='inline-block'>bd. Mircea cel Bătrân 33</h2></div>
-              <div><Image width={25} src={Location} alt="str. Mitropolit Gavriil Bănulescu-Bodoni"/> <h2 className='inline-block'>str. Mitropolit Gavriil Bănulescu-Bodoni 57</h2> </div>
+              <div><Image width={25} src={Location} alt="bd. Mircea cel Bătrân"/> <h2 className='inline-block'>bd. Mircea cel Bătrân 39</h2> </div>
               <div><Image width={25} src={Location} alt="str. Columna"/> <h3 className='inline-block'>str. Columna 103</h3></div>
             </div>
           </div>
